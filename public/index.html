@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+
+    <!-- load our style sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- load Bootstrap library into our HTML -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <h1 class="mt-4 display-4">Welcome To the Dictonary App!</h1>
+    <main class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div id="word-search" class="col-md-7">
+                <h2>Comprehensive Word Information</h2>
+                <p class="text-center">Here you can get information on words. Learn about different definitions, synonyms, types of speech, categories, get examples and more!</p>
+            </div>
+        </div>
+
+        <!-- create a form for user input -->
+        <!-- 'sticky-top' allows the div to stay at the top of page on scroll -->
+        <div id="form-row" class="row sticky-top">
+            <div class="col">
+                <form id="main-form">
+                    <fieldset>
+                        <label htmlFor="word">Enter Word</label>
+
+                        <!-- create text input -->
+                        <input id='word-input' type="text" class="form-control" name="word" placeholder="automobile">
+
+                        <!-- create submit button -->
+                        <input value="Submit" type="submit" style="margin: 10px" class="btn btn-primary" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+
+                <!-- empty list to place our word data -->
+                <ul id="word-info" class="list-unstyled"></ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- import jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- import our javascript file -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+h1, h2, h3 {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: black!important;
+    color: white!important;
+}
+
+form {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+#form-row {
+    background: black;
+}
+
+main {
+    flex-grow: 1;
+    margin-bottom: 20vh;
+}
+
+#word-search {
+    margin-top: 50px;
+}
+
+.list-item {
+    background: white;
+    color:black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.definition {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
