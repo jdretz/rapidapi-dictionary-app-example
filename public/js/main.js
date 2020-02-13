@@ -23,7 +23,7 @@ $(document).ready(function(){
         try {
 
             // asynchronously calls our custome function
-            const data = await (await fetch(`http://localhost:9000/.netlify/functions/getWord?word=${word}`, { mode: 'cors'})).json();
+            const data = await (await fetch(`/.netlify/functions/getWord?word=${word}`, { mode: 'cors'})).json();
 
             // logs no results if word data is not found
             if (data.length < 1) {
